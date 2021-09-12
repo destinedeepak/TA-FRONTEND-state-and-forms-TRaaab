@@ -5,7 +5,8 @@ export default class App extends React.Component{
         super(props);
         this.imageNames = ['basketball', 'cricket', 'laptop', 'phone', 'pubg', 'tiger'];
         this.state = {
-            currentImage : '/media/basketball.jpg'
+            currentImage : '/media/basketball.jpg',
+            buttonStyle: 'bg-yellow-500'
         }
     }
     handleClick = (event) =>{
