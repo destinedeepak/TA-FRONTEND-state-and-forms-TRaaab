@@ -58,7 +58,6 @@ class App extends React.Component {
             <h2 className="text-5xl mb-4">Max Value</h2>
             <div>
             {new Array(3).fill("", 0, 3).map((ele, i) => (
-                // <button className = {this.state.steps === (i+1)*5 ? "px-9 py-5 mr-4 text-2xl rounded bg-blue-900" : "bg-blue-500 px-9 py-5 mr-4 text-2xl rounded"}  onClick={this.handleStepIncrement}>{++ i*5}</button>
                 <button className={this.state.maxValue === (i === 0 ? 15 : i*100) ? "bg-blue-900 px-9 py-5 mr-4 text-2xl rounded":"bg-blue-500 px-9 py-5 mr-4 text-2xl rounded"} onClick={this.handleMaxValue}>{i === 0 ? 15 : i*100 }</button>
             ))}
             </div>
