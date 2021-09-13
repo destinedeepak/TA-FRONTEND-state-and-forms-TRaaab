@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .more-btn {
+        display:none
+    }
+    li:hover .more-btn {
+        display: block
+    }
+    .hide {
+        display: none
+    }
+}
