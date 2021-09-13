@@ -13,15 +13,14 @@ class Item extends React.Component{
         return(
             <ul className="flex flex-wrap justify-between p-20">
                 {items.map((item)=>(
-                <li className="flex-48 h-20 flex justify-between mb-20">
-                    <img src={item.img} className="flex-28 h-20" alt="" />
-                    <div className="flex-65">
-                        
-                        <div className="flex justify-between">
-                            <h5>{item.title}</h5>
-                            <span>${item.price}</span>
+                <li className="flex-48 h-20 flex justify-between mb-28">
+                    <img src={item.img} className="flex-35 h-32 object-cover border-4 border-primary rounded" alt="" />
+                    <div className="flex-60">
+                        <div className="flex justify-between border-b-2 border-dotted pb-1">
+                            <h5 className="capitalize text-primary font-bold">{item.title}</h5>
+                            <span className="font-bold text-secondary">${item.price}</span>
                         </div>
-                        <p>{item.desc}</p>
+                        <p className='text-tertiary mt-4'>{item.desc}</p>
                     </div>
                 </li>
                 ))}
