@@ -3,22 +3,29 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundColor: theme => ({
-        'primary': '#ECEDFF',
-        "secondary": "#B5A66D"
-       })
+      backgroundColor: (theme) => ({
+        primary: '#ECEDFF',
+        secondary: '#B5A66D',
+      }),
     },
     textColor: {
-      'primary': '#112337',
+      primary: '#112337',
+      secondary: '#C4A462',
+      tertiary: '#6C77A5',
     },
     flex: {
-      '48': '0 1 48%',
-      '28': '0 1 28%',
-      '65' : '0 1 65%'
-    }
+      48: '0 1 48%',
+      35: '0 1 35%',
+      60: '0 1 60%',
+    },
+    borderColor: (theme) => ({
+      DEFAULT: theme('colors.gray.300', 'currentColor'),
+      primary: '#B59B56',
+      secondary: '#1F5FB9',
+    }),
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
