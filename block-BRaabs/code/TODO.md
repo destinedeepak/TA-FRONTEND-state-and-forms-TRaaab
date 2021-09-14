@@ -11,7 +11,7 @@ Create a form with multiple input fields using Controlled Component
 
 ## Instruction
 
-1. There will be two section `shipping` and `billing` address both will contain four fields.
+1. There will be two section `shipping` and `billing` address both will contain four fields .
 
 2. Fields will be `address`, `zip`, `city` and `country`
 
