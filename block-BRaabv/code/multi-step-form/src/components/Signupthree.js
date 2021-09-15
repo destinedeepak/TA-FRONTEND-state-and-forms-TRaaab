@@ -80,7 +80,7 @@ class Signupthree extends React.Component {
               Back
             </button>
             <button
-              type="submit"
+              onSubmit= {this.props.handleSubmit}
               className="bg-primary mt-8 text-white text-xs px-8 py-3 rounded-lg ml-12"
             >
               Submit

@@ -42,6 +42,7 @@ class App extends React.Component {
           <Signupthree
             handleStep={this.handleStep}
             handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
             state={this.state}
           />
         );
@@ -56,12 +57,17 @@ class App extends React.Component {
     });
   };
 
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Hi');
+  };
+
   handleChange = (event) => {
     let name = event.target.name;
     let value = event.target.value;
     this.setState({
-      [name]:value
-    })
+      [name]: value,
+    });
   };
 
   render() {
