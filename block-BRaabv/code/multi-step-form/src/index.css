@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    .h-600{
+        height:640px;
+    }
+    input[type="date"] {
+        background-color: transparent;
+        outline: none;
+        font-size: 12px;
+        color:gray;
+      }
+      
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        font-size: 12px;
+      }
+      input,textarea {
+          font-size:12px;
+          color:gray;
+      }
+}
